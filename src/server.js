@@ -13,7 +13,7 @@ const matchRoutes = require("./routes/matchRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "https://smart-resume-screener-eight.vercel.app" }));
 app.use(express.json());
 
 // Health check — useful to confirm the server is up before testing routes.
