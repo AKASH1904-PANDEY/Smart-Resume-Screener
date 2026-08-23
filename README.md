@@ -1,4 +1,9 @@
 # Smart Resume Screener
+🔗 **Live demo:** https://smart-resume-screener-eight.vercel.app/
+🔗 **Backend API:** https://smart-resume-screener-8jiy.onrender.com
+
+> Note: the backend is on Render's free tier and spins down after
+> inactivity — the first request may take 30-50 seconds to wake up.
 
 Parses resumes, extracts structured data, and scores candidate fit against
 a job description using an LLM.
