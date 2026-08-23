@@ -87,19 +87,4 @@ Returns `{ score, justification }` as JSON, stored per candidate/JD pair.
 | POST   | `/api/matches`                 | Score a candidate against a JD (`{ candidateId, jdId }`) |
 | GET    | `/api/matches/shortlist?jdId=` | Ranked shortlist for a JD (optional `&minScore=`) |
 
-## Notes
 
-- Uploaded files are deleted after text extraction — only extracted text is
-  persisted, keeping the repo/DB free of raw file storage.
-- Re-scoring the same candidate/JD pair updates the existing match instead
-  of duplicating it.
-
-## Demo video script (suggested, 2–3 min)
-
-1. Show `Upload resumes` tab — drop 2–3 sample resumes, point out the
-   parsed skills tags appearing per candidate.
-2. Show `Job descriptions` tab — paste a JD, save it.
-3. Show `Shortlist` tab — select the JD, click "Score all candidates,"
-   then "Refresh shortlist." Narrate the ranked stamps + justifications.
-4. Briefly show the two LLM prompts in `src/services/llmService.js` and
-   the ranked-query logic in `matchController.js`.
